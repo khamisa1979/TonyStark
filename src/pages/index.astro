@@ -1,18 +1,172 @@
 ---
 import Base from '../layouts/Base.astro';
-import Bookmarks from '../components/Bookmarks.astro';
 ---
-<Base title="Mona's Bookmark Manager App">
-  <header>
-    <h1>🔖 Mona's Bookmark Manager App</h1>
-    <p class="tagline">Save a link and get a short, shareable <code>mona-</code> slug — no account needed.</p>
+<Base title="AI in Finance | Research, News & Reports">
+  <header class="hero">
+    <p class="eyebrow">Research guide · Financial services</p>
+    <h1>AI in finance</h1>
+    <p class="tagline">
+      A practical starting point for the latest coverage, industry research, and reports on
+      artificial intelligence across financial services.
+    </p>
+    <nav class="quick-links" aria-label="Explore AI in finance">
+      <a href="#latest">Latest coverage</a>
+      <a href="#infographic">Industry overview</a>
+      <a href="#reports">Reports &amp; PDFs</a>
+    </nav>
   </header>
 
   <main>
-    <Bookmarks />
+    <section id="latest" aria-labelledby="latest-title">
+      <div class="section-heading">
+        <p class="eyebrow">Updated search results</p>
+        <h2 id="latest-title">Follow the latest coverage</h2>
+        <p>These live searches surface new stories as they are published; use publication dates to check recency.</p>
+      </div>
+      <div class="card-grid">
+        <a
+          class="resource-card news-card"
+          href="https://news.google.com/search?q=AI%20financial%20services%20banking%20when%3A30d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="card-label">News · past 30 days</span>
+          <h3>AI in banking &amp; financial services</h3>
+          <p>Recent reporting on deployments, investments, regulation, and the impact on customers and workers.</p>
+          <span class="card-link">Open live news search ↗</span>
+        </a>
+        <a
+          class="resource-card news-card"
+          href="https://news.google.com/search?q=generative%20AI%20finance%20regulation%20when%3A30d"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="card-label">News · past 30 days</span>
+          <h3>Generative AI &amp; financial regulation</h3>
+          <p>Track policy updates, governance expectations, model-risk discussions, and responsible-use guidance.</p>
+          <span class="card-link">Open live news search ↗</span>
+        </a>
+        <a
+          class="resource-card news-card"
+          href="https://arxiv.org/search/?query=artificial+intelligence+finance&searchtype=all"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="card-label">Research · live index</span>
+          <h3>New academic research</h3>
+          <p>Browse recent papers on financial applications, evaluation methods, risks, and market effects.</p>
+          <span class="card-link">Search arXiv ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="infographic" class="infographic-section" aria-labelledby="infographic-title">
+      <div class="section-heading">
+        <p class="eyebrow">Infographic · at a glance</p>
+        <h2 id="infographic-title">Where AI is changing financial services</h2>
+        <p>A qualitative map of common use cases and the questions institutions need to manage.</p>
+      </div>
+      <figure class="infographic">
+        <div class="use-case-grid">
+          <article class="use-case">
+            <span class="use-case-number">01</span>
+            <h3>Customer &amp; advice</h3>
+            <p>Service assistants, tailored communication, and adviser support.</p>
+            <span class="outcome">Focus: service quality &amp; privacy</span>
+          </article>
+          <article class="use-case">
+            <span class="use-case-number">02</span>
+            <h3>Risk &amp; compliance</h3>
+            <p>Fraud detection, transaction monitoring, and document review.</p>
+            <span class="outcome">Focus: accuracy &amp; explainability</span>
+          </article>
+          <article class="use-case">
+            <span class="use-case-number">03</span>
+            <h3>Markets &amp; investing</h3>
+            <p>Research synthesis, portfolio analytics, and trading tools.</p>
+            <span class="outcome">Focus: model risk &amp; resilience</span>
+          </article>
+          <article class="use-case">
+            <span class="use-case-number">04</span>
+            <h3>Operations</h3>
+            <p>Document processing, software development, and workflow automation.</p>
+            <span class="outcome">Focus: data handling &amp; oversight</span>
+          </article>
+        </div>
+        <figcaption>
+          Across all four areas: build in human accountability, secure data practices, independent testing,
+          and oversight of third-party providers. This overview is thematic, not a ranking of adoption.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section id="reports" aria-labelledby="reports-title">
+      <div class="section-heading">
+        <p class="eyebrow">Primary sources &amp; documents</p>
+        <h2 id="reports-title">Reports, research &amp; PDFs</h2>
+        <p>Start with these institutional sources, then check their publication pages for newer editions.</p>
+      </div>
+      <div class="report-list">
+        <article class="report">
+          <div>
+            <span class="card-label">Financial stability · November 2024</span>
+            <h3>The Financial Stability Implications of Artificial Intelligence</h3>
+            <p>
+              Financial Stability Board analysis of AI adoption, vulnerabilities, and potential implications
+              for the financial system.
+            </p>
+          </div>
+          <div class="report-actions">
+            <a href="https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/" target="_blank" rel="noopener noreferrer">Read report ↗</a>
+            <a href="https://www.fsb.org/uploads/P14112024.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a>
+          </div>
+        </article>
+        <article class="report">
+          <div>
+            <span class="card-label">Global AI trends · April 2025</span>
+            <h3>The 2025 AI Index Report</h3>
+            <p>
+              Stanford HAI's annual overview of AI research, investment, capabilities, and policy. Broad
+              context for financial-sector developments, not a finance-only study.
+            </p>
+          </div>
+          <div class="report-actions">
+            <a href="https://hai.stanford.edu/ai-index/2025-ai-index-report" target="_blank" rel="noopener noreferrer">Explore report ↗</a>
+            <a href="https://aiindex.stanford.edu/wp-content/uploads/2025/04/HAI_AI-Index-Report-2025.pdf" target="_blank" rel="noopener noreferrer">PDF ↗</a>
+          </div>
+        </article>
+        <article class="report">
+          <div>
+            <span class="card-label">Central-bank research · live collection</span>
+            <h3>AI and financial services research</h3>
+            <p>
+              Search the Bank for International Settlements library for working papers, speeches, and
+              publications on AI, banking, and financial stability.
+            </p>
+          </div>
+          <div class="report-actions">
+            <a href="https://www.bis.org/search.htm?query=artificial+intelligence+finance" target="_blank" rel="noopener noreferrer">Search BIS ↗</a>
+          </div>
+        </article>
+        <article class="report">
+          <div>
+            <span class="card-label">International policy · live collection</span>
+            <h3>AI, financial inclusion &amp; the economy</h3>
+            <p>
+              Find IMF analysis and commentary on AI's economic effects, productivity, financial inclusion,
+              and policy considerations.
+            </p>
+          </div>
+          <div class="report-actions">
+            <a href="https://www.imf.org/en/Topics/artificial-intelligence" target="_blank" rel="noopener noreferrer">Explore IMF resources ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer>
-    Your bookmarks stay on this device, saved in your browser.
+    Live searches may include material of varying quality. Check the original publisher, date, and methodology
+    before relying on a finding; this guide is for research, not financial advice.
   </footer>
 </Base>
